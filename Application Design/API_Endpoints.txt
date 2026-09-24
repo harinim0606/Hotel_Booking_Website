@@ -1,0 +1,93 @@
+Authentication APIs
+
+Register
+POST /api/auth/register
+       
+Login
+POST /api/auth/login
+
+
+
+Hotel APIs
+
+Get All Hotels
+GET /api/hotels
+
+Authentication
+Public
+
+Get Hotel
+GET /api/hotels/{id}
+
+Search Hotels
+GET /api/hotels/search
+
+Create Hotel
+POST /api/hotels
+
+Authentication:
+HOTEL_ADMIN
+
+Update Hotel
+PUT /api/hotels/{id}
+
+Delete Hotel
+DELETE /api/hotels/{id}
+
+
+
+Room APIs
+
+Get Hotel Rooms
+GET /api/hotels/{hotelId}/rooms
+
+Get Room
+GET /api/rooms/{id}
+
+Create Room
+POST /api/hotels/{hotelId}/rooms
+
+Update Room
+PUT /api/rooms/{id}
+
+Delete Room
+DELETE /api/rooms/{id}
+
+
+
+Availability API
+Check whether a room is available for the selected dates.
+
+http
+GET /api/rooms/availability
+
+
+
+Booking APIs
+
+Create Booking
+POST /api/bookings
+
+Authentication:
+Required
+
+Get My Bookings
+GET /api/bookings/my
+
+Authentication:
+Required
+
+Get Booking Details
+GET /api/bookings/{id}
+
+Authentication:
+Required
+
+Cancel Booking
+PUT /api/bookings/{id}/cancel
+
+Authentication:
+Required
+
+
+
